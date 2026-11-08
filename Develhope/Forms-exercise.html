@@ -60,21 +60,59 @@
                                 <label for="pro-plan" name="pro_plan"></label>
                             </div>
                         </fieldset>
-                        <aside>
-                            <div>
-                                <label for="ccn">Carta di credito </label>
-                                <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
-                            </div>
-                            <div>
-                                <label for="cvc">CVC </label>
-                                <input id="cvc" type="tel" inputmode="numeric" pattern="[0-9]{3}" autocomplete="cc-number" maxlength="3" placeholder="xxx" required>
-                            </div>
-                            <div>
-                                <label for="cvc">Scadenza </label>
-                                <input id="cvc" type="date" autocomplete="date" required>
-                            </div>
-                        </aside>
+                    </div>
                 </section>
+                <aside>
+                    <div>
+                        <label for="ccn">Carta di credito </label>
+                        <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
+                    </div>
+                    <div>
+                        <label for="cvc">CVC </label>
+                        <input id="cvc" type="tel" inputmode="numeric" pattern="[0-9]{3}" autocomplete="cc-number" maxlength="3" placeholder="xxx" required>
+                    </div>
+                    <div>
+                        <label for="cvc">Scadenza </label>
+                        <input id="cvc" type="date" autocomplete="date" required>
+                    </div>
+                    <fieldset>
+                        <legend>Indirizzo di fatturazione</legend>
+                        <div>
+                            <label for="nome">Nome e cognome</label>
+                            <input type="text" id="nome" name="nome" autocomplete="name" required>
+                        </div>
+                        <div>
+                            <label for="indirizzo">Indirizzo</label>
+                            <input type="text" id="indirizzo" name="indirizzo" autocomplete="street-address" placeholder="Via Roma, 10" required>
+                        </div>
+                        <div>
+                            <label for="citta">Città</label>
+                            <input type="text" id="citta" name="citta" autocomplete="address-level2" required>
+                        </div>
+                        <div>
+                            <label for="provincia">Provincia</label>
+                            <input type="text" id="provincia" name="provincia" autocomplete="address-level1" maxlength="2" placeholder="PA" required>
+                        </div>
+                        <div>
+                            <label for="cap">CAP</label>
+                            <input type="text" id="cap" name="cap" autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" required>
+                        </div>
+                        <div>
+                            <label for="paese">Paese</label>
+                        
+                            <select id="paese" name="paese" autocomplete="country" required>
+                                <option value="IT" selected>Italia</option>
+                                <option value="DE">Germania</option>
+                                <option value="FR">Francia</option>
+                                <option value="ES">Spagna</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="cf">Codice fiscale / Partita IVA</label>
+                            <input type="text" id="cf" name="cf">
+                        </div>
+                    </fieldset>
+                </aside>
                 <div>
                     <button type="submit">Iscriviti</button>
                 </div>
