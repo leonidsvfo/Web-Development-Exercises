@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Exercise</title>
+        <meta name="description" content="This is a HTML form Exercise">
+        <meta name="author" content="Leonid Svetlov">
+    </head>
+    <body>
+        <main>
+            <h1>Modulo di Registrazione Utente</h1>
+            <p>I campi contrassegnati da <strong><abbr title="richiesto">*</abbr></strong> sono obbligatori</p>
+            <form action="#" method="POST" id="user_form">
+                <section>
+                    <div>
+                        <label for="email">
+                            Email <strong><abbr title="richiesto">*</abbr></strong>
+                        </label>
+                        <input id="email" type="email" name="user_email" autocomplete="email" required/>
+                    </div>
+                    <div>
+                        <label for="pass">
+                            Password <strong><abbr title="richiesto">*</abbr></strong>
+                        </label>
+                        <input id="pass" type="password" name="user_password" minlength="8" required>
+                    </div>
+                    <div>
+                        <label for="user-name">
+                            Nome completo <strong><abbr title="richiesto">*</abbr></strong>
+                        </label>
+                        <input id="user-name" type="text" name="user_name" autocomplete="name" required/>
+                    </div>
+                    <div>
+                        <label for="birthday">
+                            Data di Nascita <strong><abbr title="richiesto">*</abbr></strong>
+                        </label>
+                        <input id="birthday" type="date" name="user_birthdate" max="2008-08-01" autocomplete="bday" required>
+                    </div>
+                    <div>
+                        <label for="user-phone">
+                            Numero di telefono <strong><abbr title="richiesto">*</abbr></strong>
+                        </label>
+                        <input id="user-phone" type="tel" name="user_phone" autocomplete="tel" placeholder="123-456-7890" required/>
+                    </div>
+                    <div>
+                        <label for="user_subscription"> Piano di abbonamento: <strong><abbr title="richiesto">*</abbr></strong></label>
+                        <select id="user_subscription" name="subscription">
+                            <option value="">Scegli un opzione</option>
+                            <option value="free_plan">Piano free</option>
+                            <optgroup label="Theropods">
+                                <option value="plus_plan">Piano plus 10$</option>
+                                <option value="extra_plan">Piano extra 20$</option>
+                                <option value="multy_plan">Piano multiplo 30$</option>
+                            </optgroup>
+                        </select>
+                        <fieldset>
+                            <legend>Piano professionale 100$</legend>
+                            <div>
+                                <input type="checkbox" id="pro-plan" name="horns" />
+                                <label for="pro-plan" name="pro_plan"></label>
+                            </div>
+                        </fieldset>
+                        <aside>
+                            <div>
+                                <label for="ccn">Carta di credito </label>
+                                <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
+                            </div>
+                            <div>
+                                <label for="cvc">CVC </label>
+                                <input id="cvc" type="tel" inputmode="numeric" pattern="[0-9]{3}" autocomplete="cc-number" maxlength="3" placeholder="xxx" required>
+                            </div>
+                            <div>
+                                <label for="cvc">Scadenza </label>
+                                <input id="cvc" type="date" autocomplete="date" required>
+                            </div>
+                        </aside>
+                </section>
+                <div>
+                    <button type="submit">Iscriviti</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
