@@ -1,0 +1,13 @@
+.better {
+    background-color: black;
+    color: white;
+}
+.stronger {
+    background-color: yellow;
+}
+.better, 
+.stronger {
+    font-size: 28px;
+    font-family: Helvetica,'Times New Roman', sans-serif;
+}
+/* Add CSS Styling */
