@@ -1,0 +1,80 @@
+<!-- Crea un pagina HTML per un blog, con le seguenti caratteristiche:
+
+    La pagina dovrà contenere l'articolo, un footer e un form.
+    L'articolo dovrò avere un titolo, un paragrafo e una immagine di sfondo.
+    Il form dovrà avere un campo obbligatorio per l'inserimento della mail e un pulsante di invio.
+-->
+
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pagina d'aquisto</title>
+        <meta name="author" content="Negozio di Leo">
+        <meta name="description" content="Cuffie KGT-97 con isolamento acustico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html"><strong>Home</strong></a>
+                <a href="../pages/products.html">Prodotti</a>             
+            </nav>
+            <h1>Cuffie KGT-97</h1>
+        </header>
+        <main>
+            <section>
+                <p>Il tuo suono, senza limiti e senza fili.</p>
+                <img src="../images/cuffie-kgt-97.jpeg" alt="Cuffie KGT-97" width="300">
+            </section>
+            <article>
+                <p>Cuffie over-ear con cancellazione attiva del rumore, audio ad alta definizione e fino a 40 ore di autonomia. Perfette per la musica, i viaggi e lo smart working.</p>
+                <p>Acquista oggi e avrai uno sconto sul prossimo prodotto!</p>
+            </article>
+            <form>
+                <h2>Iscriviti e completa l'acquisto!</h2>
+                <div>
+                    <label for="user-email">Email</label>
+                    <input type="email" id="user-email" name="email" required />
+                    <label for="user-pass">Password</label>
+                    <input type="password" id="user-pass" name="pass" required />
+                </div>
+                <div>
+                    <label for="user-name">Nome e cognome</label>
+                    <input type="text" id="user-name" name="name" required />
+                    <label for="user-brd">Data di nascita</label>
+                    <input type="date" id="user-brd" name="btd" required />
+                    <label for="user-tel">Telefono</label>
+                    <input type="tel" id="user-tel" name="tel" required />
+                </div>
+                <div>
+                    <label for="user-cc">Numero Carta</label>
+                    <input id="user-cc" name="cc" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required/>
+                    <label for="user-cvc">CVC</label>
+                    <input id="user-cvc" name="cvc" type="tel" inputmode="numeric" pattern="[0-9]{3}" maxlength="3" placeholder="xxx" required/>
+                    <label for="card-exp">Scadenza</label>
+                    <input id="card-exp" name="card-exp" type="text" maxlength="5" placeholder="MM/YY" required>
+                    <label for="form-address">Indirizzo di fatturazione</label>
+                    <input type="text" id="form-address" name="form-address" required />
+                </div>
+                <button type="submit">Iscriviti ed acquista</button>
+            </form>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
+
+<!--nome
+password
+email
+data di nascita
+telefono
+
+numero carta
+data scadenza
+cvc
+indirizzo fatturazione
+pulsante di invio
+-->
