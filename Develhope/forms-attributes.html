@@ -12,7 +12,7 @@ L'input field dovrà avere l'autofocus all'apertura della pagina
 
 <!DOCTYPE html>
 <html>
-    <head>
+    <head lang="it">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -21,8 +21,8 @@ L'input field dovrà avere l'autofocus all'apertura della pagina
 <body>
     <main>
         <div>
-            <label for="soks">Numero di calzini</label>
-            <input id="soks" name="socks" type="number" min="0" max="100" autofocus step="2"> 
+            <label for="socks">Numero di calzini</label>
+            <input id="socks" name="socks" type="number" min="0" max="100" autofocus step="2"> 
         </div>
         <fieldset>
             <legend>Includi spedizione</legend>
@@ -31,8 +31,10 @@ L'input field dovrà avere l'autofocus all'apertura della pagina
                 <label for="shipping">Accetti i termini e le condizioni</label>
             </div>
         </fieldset>
-        <label for="shipping_date">Seleziona il giorno di spedizione</label>
-        <input id="shipping_date" type="date">
+        <div>
+            <label for="shipping_date">Seleziona il giorno di spedizione</label>
+            <input id="shipping_date" type="date">
+        </div>
         <div>
             <button type="button" name="user_data" disabled>Acquista!</button>
         </div>
