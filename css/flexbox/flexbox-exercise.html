@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, 
+            initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>CSS Lessons</title>
+        <style>
+            
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                
+            }
+
+            nav {
+                display: flex;
+                flex-direction: column;
+            }
+
+            ul li {
+                list-style-type: none;
+            }
+
+            li a {
+                color: #2b2b2b;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                color: #2b2bb2;
+                transition: color 0.3s;
+            }
+
+            .pageLogo {
+                width: 30%;
+            }
+
+            main {
+                display: flex;
+                flex: 1;
+                height: auto;
+                width: auto;
+            }
+
+            aside {
+                display: flex;
+                flex-direction: column;
+                border: 1px solid #2b2b2b;
+                width: 200px;
+            }
+
+            footer {
+                display: flex;
+                flex-direction: column;
+                margin-top: auto;
+            }
+
+            article {
+                flex: 1;
+            }
+
+            .userPhoto {
+                width: 80px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <aside>
+                <nav>
+                    <img class="pageLogo" src="./Logo">
+                    <ul>
+                        <li><a href="./link1">Link 1</a></li>
+                        <li><a href="./link2">Link 2</a></li>
+                        <li><a href="./link3">Link 3</a></li>
+                        <li><a href="./link4">Link 4</a></li>
+                    </ul>
+                </nav>
+                <article>
+                </article>
+                <footer>
+                    <img class="userPhoto" src="./userPhoto">
+                    <h3>User Name</h3>
+                </footer>
+            </aside>
+        </main>
+    </body>
+</html>
