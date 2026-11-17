@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            display: flex;
+            margin: 0;
+            justify-content: space-between;
+            height: 100vh;
+            width: 100vw;
+            gap: 30px;
+        }
+
+        .yellow,
+        .red,
+        .green,
+        .orange,
+        .blue {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+            padding: 40px 20px 20px 20px;
+        }
+
+        .yellow {
+            background-color: rgba(255, 255, 0, 0.189);
+            width: 145px;
+        }
+
+        .yellow div {
+            background-color: white;
+            align-self: center;
+            padding: 20px;
+        }
+
+        .red div {
+            background-color: white;
+            align-self: center;
+            padding: 20px;
+        }
+
+        .red {
+            background-color: rgba(255, 0, 0, 0.16);
+            width: 145px;
+            text-align: start;
+            
+        }
+
+        .green {
+            background-color: rgba(0, 254, 0, 0.18);
+            width: 120px;
+        }
+
+        .orange {
+            background-color: rgba(255, 166, 0, 0.189);
+            width: 200px;
+            flex-basis: 350px;
+            text-align: start;
+            padding-left: 40px;
+        }
+
+        .blue {
+            background-color: rgba(0, 170, 255, 0.257);
+            width: 120px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="yellow">
+        YELLOW
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class="red">
+        RED
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+    <div class="green">
+        GREEN
+    </div>
+    <div class="orange">
+        ORANGE    
+    </div>
+    <div  class="blue">
+        BLUE
+    </div>
+</body>
+</html>
