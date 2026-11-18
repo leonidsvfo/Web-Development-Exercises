@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html {
+            margin: none;
+        }
+
+        body.container {
+            display: grid;
+            grid-template-areas: 
+                "g g g"
+                "y r b"
+                "o o b";
+            gap: 30px;
+            text-align: center;
+            grid-auto-flow: dense
+        }
+
+        .container > div {
+            padding: 50px;
+        }
+
+        .yellow {
+            display: grid;
+            background-color: rgb(255, 255, 148);
+            grid-area: y;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 25px;
+            text-align: left            
+        }
+        
+        .yellow > div {
+            background-color: white;
+            margin: 2px;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .red {
+            display: grid;
+            background-color: rgb(255, 123, 123);
+            grid-area: r;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 25px;
+            text-align: left 
+        }
+
+        .red > div {
+            background-color: white;
+            margin: 2px;
+            padding: 20px;
+        }
+
+        .green {
+            background-color: rgba(0, 252, 0, 0.325);
+            grid-area: g;
+        }
+
+        .orange {
+            background-color: rgba(252, 126, 0, 0.325);
+            grid-area: o;
+        }
+
+        .blue {
+            background-color: rgba(0, 172, 252, 0.325);
+            grid-area: b;
+        }
+
+        div {
+            text-align: left;
+        }
+
+        div.title {
+            grid-column: 1 / -1;
+            background-color: inherit;
+            padding: none;
+        }
+
+    </style>
+</head>
+<body class="container">
+    <div class="yellow">
+        <div class="title">YELLOW</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class="red">
+        <div class="title">RED</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+    <div class="green">GREEN</div>
+    <div class="orange">ORANGE</div>
+    <div class="blue">BLUE</div>
+</body>
+</html>
