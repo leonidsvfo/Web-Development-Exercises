@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body.container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 0.5fr 2fr 0.5fr;
+            gap: 30px;
+            text-align: center;
+        }
+
+        .container > div {
+            padding: 50px;
+        }
+
+        .yellow {
+            background-color: rgba(252, 252, 0, 0.325);
+        }
+        
+        .yellow > div {
+            display: flex;
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .red {
+             background-color: rgba(252, 0, 0, 0.325);
+             text-align: left;
+        }
+
+        .red > div {
+            display: flex;
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .green {
+            background-color: rgba(0, 252, 0, 0.325) ;
+        }
+
+        .orange {
+            background-color: rgba(252, 126, 0, 0.325);
+            text-align: left;
+        }
+
+        .blue {
+            background-color: rgba(0, 172, 252, 0.325) ;
+        }
+
+    </style>
+</head>
+<body class="container">
+    <div class="yellow">
+        YELLOW
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class="red">
+        RED
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+    <div class="green">GREEN</div>
+    <div class="orange">ORANGE</div>
+    <div class="blue">BLUE</div>
+</body>
+</html>
