@@ -23,8 +23,8 @@ function camelize(str){
     //divide the argument in arrays
 	let result = str.split('-');
     // the first letter of every array should be UpperCased
-    let words = result.map((x) => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase());
-    return words;
+    let everyFirstUpper = result.map((x) => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase());
+    console.log(everyFirstUpper.join(''))
 }
 
 
