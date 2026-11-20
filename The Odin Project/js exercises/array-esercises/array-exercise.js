@@ -16,10 +16,9 @@ camelize("-webkit-transition") == 'WebkitTransition';
       let otherLetters = result.map((x) => x.slice(1).toLowerCase());
       result[0].toLowerCase + 
 
-P.S. Hint: use split to split the string into an array, transform it and join back. */
+P.S. Hint: use split to split the string into an array, transform it and join back. 
 
 
-//my first attempt was working only for the "this-style" method
 function camelize(str) {
     
     if (str[0] === '-') {
@@ -52,7 +51,7 @@ function camelized(str) {
 }
 
 
-/*
+
 Filter range
 importance: 4
 
@@ -72,7 +71,7 @@ alert( filtered ); // 3,1 (matching values)
 alert( arr ); // 5,3,8,1 (not modified)
 
 */
-
+/*
 let arr = [5, 3, 8, 1];
 
 function filterRange(arr, a, b) {
@@ -81,5 +80,52 @@ function filterRange(arr, a, b) {
 
 let filtered = filterRange(arr, 1, 7);
 
+---
+ 
+Filter range "in place"
+importance: 4
+
+Write a function filterRangeInPlace(arr, a, b) that gets an array arr and removes 
+from it all values except those that are between a and b. The test is: a ≤ arr[i] ≤ b.
+
+The function should only modify the array. It should not return anything.
+
+For instance:
+
+let arr = [5, 3, 8, 1];
+
+filterRangeInPlace(arr, 1, 4); // removed the numbers except from 1 to 4
+
+alert( arr ); // [3, 1]
 
 
+let arr2 = [5, 3, 8, 1];
+
+function filterRangeInPlace(a, b) {
+    arr2 = alert(arr.filter((num) => num >= a && num <= b));
+}
+
+filterRangeInPlace(1, 4);
+
+// Sort in decreasing order
+
+let arr = [5, 2, 1, -10, 8];
+arr.sort((a, b) => b - a);
+
+Copy and sort array
+importance: 5
+
+We have an array of strings arr. We’d like to have a sorted copy of it, but keep arr unmodified.
+
+Create a function copySorted(arr) that returns such a copy.
+*/
+
+let arr = ["HTML", "JavaScript", "CSS"];
+
+function copySorted(si){
+    return si
+    .slice(0)
+    .sort();
+}
+
+let sorted = copySorted(arr)
