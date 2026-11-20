@@ -14,17 +14,41 @@ camelize("-webkit-transition") == 'WebkitTransition';
 
   return result[0] + result[1].charAt(0).toUpperCase() + result[1].slice(1);
       let otherLetters = result.map((x) => x.slice(1).toLowerCase());
+      result[0].toLowerCase + 
 
 P.S. Hint: use split to split the string into an array, transform it and join back. */
 
 
 //my first attempt was working only for the "this-style" method
-function camelize(str){
-    //divide the argument in arrays
-	let result = str.split('-');
-    // the first letter of every array should be UpperCased
-    let everyFirstUpper = result.map((x) => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase());
-    console.log(everyFirstUpper.join(''))
+function camelize(str) {
+    
+    if (str[0] === '-') {
+        //divide the argument in arrays
+        let result = str.split('-');
+        // the first letter of every array should be UpperCased
+        let everyFirstUpper = result.map((x) => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase());
+        console.log(everyFirstUpper.join(''));
+    }  else {
+        //divide the argument in arrays
+        let result = str.split('-');
+
+        // the first letter of every array is UpperCased
+        let everyFirstUpper = result.map((word) => word[0].toUpperCase() + word.slice(1));
+        
+        // need to lowerCase the first item of the arrey
+        console.log(everyFirstUpper.join(''));
+    }
+}
+
+//solution
+
+function camelized(str) {
+    return str
+    .split('-')
+    .map(
+    (word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)
+    )
+    .join('');
 }
 
 
