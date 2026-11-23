@@ -147,10 +147,49 @@ shuffle(arr);
 // ...
 
 
-let arr = [1, 2, 3];
+let cards = [1, 2, 3];
 
 function shuffle(arr) {
-    return .ort
-
+    for (i = arr.length - 1; i > 0; i--) {
+        const random = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[random]] = [arr[random], arr[i]];
+    }
 }
+
+shuffle(cards);
+
+console.log(cards);
+
+---
+
+Filter unique array members
+importance: 4
+
+Let arr be an array.
+
+Create a function unique(arr) that should return an array with 
+unique items of arr.
+
+For instance:
+
+function unique(arr) {
+  // your code 
+}
+
+let strings = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+
+alert( unique(strings) ); // Hare, Krishna, :-O
+
+
+function unique(arr) {
+  return Array.from(new Set(arr));
+}
+
+let strings = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+
+alert( unique(strings) );
 */
