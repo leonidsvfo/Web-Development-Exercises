@@ -1,0 +1,50 @@
+<!--Rendi la navbar del file html responsiva: sotto i 768 pixel, la barra di navigazione 
+viene sostituita da un menu hamburger senza funzionalità, che appare solamente. -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        @media (max-width: 768px) {
+            .hambuger-menu { display: flex;}
+            .min-nav {display: none;}
+        } 
+    </style>
+  </head>
+  <body>
+    <nav>
+        <div class="min-nav">
+            <ul>
+                <h1 class="logo">Navbar</h1>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item"></li>
+                <li class="nav-item dropdown">
+                <a class="nav-link" href="#">Dropdown</a><span>&#x25BC;</span>
+                </li>
+                <li class="nav-item">
+                <button disabled href="#">Disabled</button>
+                </li>
+            </ul>
+
+            <form class="search-wrapper">
+                <input class="search-input" type="search" placeholder="Search" />
+                <button class="search" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="hambuger-menu">
+            <div class="">Hamburger-1</div>
+            <div class="">Hamburger-2</div>
+            <div class="">Hamburger-3</div>
+        </div>
+    </nav>
+  </body>
+</html>

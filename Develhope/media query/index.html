@@ -1,0 +1,86 @@
+<!--Cerca di replicare il layout visualizzato nelle immagini: cards-desktop.jpg cards-mobile.jpg (max-width: 375px), cards-tablet.jpg (max-width: 768px).
+
+La pagina creata dovrebbe essere responsiva, sia per la visualizzazione tablet ((max-width: 768px)) che per la visualizzazione mobile ((max-width: 375px)).-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        article {
+            border: 1px solid gray;
+            border-radius: 20px;
+            padding: 10px;
+            background-color: rgb(210, 209, 209);
+            font-size: 10px;
+        }
+
+        img {
+            align-self: center;
+            justify-self: center;
+        }
+        
+        @media (max-width: 375px) {
+
+            main {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, 150px);
+                gap: 20px;
+                grid-template-rows: auto;
+                grid-auto-rows: auto;
+            }
+        }
+
+        @media (min-width: 375px) {
+
+            main {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, 150px);
+                gap: 20px;
+                grid-template-rows: auto;
+                grid-auto-rows: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <header>
+                <h2>Mario Rossi</h2>
+                <h4>Lun, 13/12/2021</h4>
+            </header>
+            <img src="./Screenshot From 2026-11-23 10-15-48.png" alt="kitty" width="130px" height="auto">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ea, cillum labore ex. Magna vero 
+                   incididunt nulla ea mollit dolore enim ipsum sit, duis cupidatat.</p>
+            </div>
+        </article>
+        <article>
+            <header>
+                <h2>Elis Miao</h2>
+                <h4>Lun, 17/12/2021</h4>
+            </header>
+            <img src="./Screenshot From 2026-11-23 10-15-54.png" alt="kitty" width="130px"  height="auto">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ea, cillum labore ex. Magna vero 
+                   incididunt nulla ea mollit dolore enim ipsum sit, duis cupidatat.</p>
+            </div>
+        </article>
+        <article>
+            <header>
+                <h2>Gattino micino</h2>
+                <h4>Lun, 13/01/2021</h4>
+            </header>
+            <img src="./Screenshot From 2026-11-23 10-16-03.png" alt="kitty" width="130px" height="auto">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ea, cillum labore ex. Magna vero 
+                   incididunt nulla ea mollit dolore enim ipsum sit, duis cupidatat.</p>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
